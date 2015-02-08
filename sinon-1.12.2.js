@@ -5167,7 +5167,7 @@ if (typeof sinon == "undefined") {
                 if (!doneIsWrapped) {
                     if (typeof exception !== "undefined") {
                         sandbox.restore();
-                        throw exception;
+                        throw exception.stack;
                     } else {
                         sandbox.verifyAndRestore();
                     }
